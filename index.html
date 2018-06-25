@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+    <script src="jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <input type="button" name="button" id="add" value="Bouton +"></button>
+    <input type="button" name="button" id="remove" value="bouton -"></button>
+    <input type="text" id="text"></input>
+  </body>
+  <script>
+  //compteur pour le nombre de click
+    var count = 0;
+    $('#add').click(function() {
+      // incrementation du compteur
+      count++;
+      // affichage du nombre de click sur le compteur
+      $('#text').val(count);
+    });
+    $('#remove').click(function() {
+      // incrementation du compteur
+      count--;
+      // affichage du nombre de click sur le compteur
+      $('#text').val(count);
+    });
+  </script>
+</html>
